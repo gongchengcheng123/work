@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    width: 1345px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    overflow: hidden;
+}
+.bian{
+    height: 307px;
+    position: absolute;
+    left: 77%;
+    top: 35px;
+    z-index: 1000;
+    display: none;
+}
+nav{
+    width: 800px;
+
+}
+span{
+    display: block;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 800;
+    list-style: none;
+    width: 50px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #FBA60A;
+}
+nav ul{
+    margin-left: 200px;
+    margin-top: 60px;
+}
+.logo{
+    margin: 0 auto;
+    width: 155px;
+    margin-top: -50px;
+}
+.header{
+    float: right;
+    margin-top: -50px;
+}
+.main{
+    height: 525px;
+    overflow: hidden;
+}
+.main img{
+    display: none;
+    position: absolute;
+}
+.banner{
+    width: 1122px;
+    margin: 0 auto;
+}
+.one,.two,.there{
+    margin-right: 42px;
+}
+.banner-b img{
+    float: left;
+}
+.img1,.img2,.img3,.img4{
+    margin-left: 42px;
+}
+.img3,.img4{
+    margin-top: 44px;
+}
+h2{
+    text-align: center;
+    color: #6f6f6f;
+}
+.s{
+    width: 250px;
+    height: 322px;
+    background-color: #FBA60A;
+    position: absolute;
+    margin-left: -290px;
+    display: none;
+}
+.b{
+    width: 250px;
+    height: 322px;
+    background-color: #FBA60A;
+    position: absolute;
+    left: 200px;
+    display: none;
+}
+.banner-l{
+    width: 1122px;
+    height: 250px;
+}
+.banner1,.banner3,.banner4{
+    height: 322px;
+    width: 249px;
+    margin-right: 42px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.banner5{
+    overflow: hidden;
+    position: relative;
+    height: 322px;
+    width: 249px;
+    float: left;
+}
+.banner-b{
+    clear: both;
+    height: 489px;
+    position: relative;
+}
+.s{
+    display: block;
+    width: 249px;
+    height: 322px;
+    background-color: #FBA60A;
+    position: absolute;
+    left: 290px;
+    top: 322px;
+    opacity: 0.4;
+}
+.b{
+    display: block;
+    width: 249px;
+    height: 322px;
+    background-color: #FBA60A;
+    position: absolute;
+    top: 322px;
+    left: 0px;
+    opacity: 0.4;
+}
+.banner2{
+    width: 538px;
+    height: 458px;
+    float: left;
+}
+.c{
+    width: 538px;
+    height: 458px;
+    background-color: #000000;
+    display: block;
+    clear: both;
+    position: absolute;
+    opacity: 0;
+}
+.d,.e,.f,.g{
+    display: block;
+    width: 249px;
+    height: 206px;
+    background-color: #000000;
+    position: absolute;
+    opacity: 0;
+}
+.d{
+    top:27px;
+    left: 580px;
+}
+.e{
+    top: 27px;
+    left: 870px;
+}
+.f{
+    top: 280px;
+    left: 580px;
+}
+.g{
+    top: 280px;
+    left: 870px;
+}

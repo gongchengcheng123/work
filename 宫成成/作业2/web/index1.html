@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index1.css"/>
+    <link rel="stylesheet" href="../css/skin_0.css" id="cssfile"/>
+    <script src="../jq/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            //换肤//
+            $("#skin li").click(function () {
+                var i = $(this).index();
+                $(this).addClass("selected").siblings("li").removeClass();
+                $("#cssfile").attr("href", "../css/skin_" + i + ".css");
+            })
+            //无缝轮播//
+            var n = 0;
+            function run() {
+                n++;
+                n=(n==5)?0:n;
+                $(".wrap img").eq(n).fadeIn(1000).siblings("img").fadeOut(1000);
+                $("#lunbo ul li").eq(n).css({"background":"pink"}).siblings("li").css({"background":"#444"})
+            }
+            var timer=setInterval(run, 2000);
+            $("#lunbo ul li").hover(function(){
+                clearInterval(timer);
+                var i=$(this).index();
+                $(".wrap img").eq(i).fadeIn(1000).siblings("img").fadeOut(1000);
+                $("#lunbo ul li").eq(i).css({"background":"pink"}).siblings("li").css({"background":"#444"})
+            },function(){
+                timer=setInterval(run,2000)
+            })
+            //海贼王轮播//
+            $(".yun").click(function(){
+                $(".lunbo2").animate({"margin-left":"0px"},1500)
+            })
+            $(".nv").click(function(){
+                $(".lunbo2").animate({"margin-left":"-800px"},1500)
+            })
+            $(".nan").click(function(){
+                $(".lunbo2").animate({"margin-left":"-1600px"},1500)
+            })
+            $(".tong").click(function(){
+                $(".lunbo2").animate({"margin-left":"-2400px"},1500)
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="logo">
+            <img src="../images/logo.gif" alt=""/>
+        </div>
+        <input type="text" value="请输入商品名称"/>
+        <div class="header-right">
+            <ul id="skin">
+                <li id="skin_0" title="灰色" class="selected">灰色</li>
+                <li id="skin_1" title="紫色">紫色</li>
+                <li id="skin_2" title="红色">红色</li>
+                <li id="skin_3" title="大蓝色">大蓝色</li>
+                <li id="skin_4" title="橙色">橙色</li>
+                <li id="skin_5" title="淡绿色">淡绿色</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">品牌</a></li>
+                <li><a href="#">女装</a></li>
+                <li><a href="#">男装</a></li>
+                <li><a href="#">鞋包配饰</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <div class="banner">
+        <div id="are">商品分类</div>
+        <div>
+            <h2>推荐品牌</h2>
+            <div class="banner-left">
+            <a href="">耐克</a>
+            <a href="">阿迪达斯</a>
+            <a href="">达芙妮</a>
+            <a href="">李宁</a>
+            <a href="">安踏</a>
+            <a href="">奥康</a>
+            <a href="">骆驼</a>
+            <a href="">特步</a>
+            </div>
+        </div>
+        <div>
+            <hr/>
+            <h2>女装</h2>
+            <div class="banner-left">
+            <a href="">尼大衣</a>
+            <a href="">T恤</a>
+            <a href="">羽绒</a>
+            <a href="">衬衫</a>
+            <a href="">羊绒衫</a>
+            <a href="">针织</a>
+            <a href="">连衣裙</a>
+            <a href="">皮外套</a>
+            </div>
+        </div>
+        <div>
+            <hr/>
+            <h2>男装</h2>
+            <div class="banner-left">
+            <a href="">衬衫</a>
+            <a href="">体恤衫</a>
+            <a href="">夹克</a>
+            <a href="">大皮衣</a>
+            <a href="">风衣</a>
+            <a href="">牛仔裤</a>
+            <a href="">西服</a>
+            <a href="">卫衣</a>
+            </div>
+        </div>
+        <div>
+            <hr/>
+            <h2>鞋包配饰</h2>
+            <div class="banner-left">
+            <a href="">围巾</a>
+            <a href="">旅行箱</a>
+            <a href="">真皮包</a>
+            <a href="">韩版</a>
+            <a href="">达芙妮</a>
+            <a href="">单肩包</a>
+            <a href="">毛线</a>
+            <a href="">清仓靴子</a>
+            </div>
+        </div>
+    </div>
+        <div id="lunbo">
+            <div class="wrap">
+                <img src="../images/ads/1.jpg" alt="1"/>
+                <img src="../images/ads/2.jpg" alt="2" class="yin">
+                <img src="../images/ads/3.jpg" alt="3" class="yin">
+                <img src="../images/ads/4.jpg" alt="4" class="yin">
+                <img src="../images/ads/5.jpg" alt="5" class="yin">
+            </div>
+            <ul>
+            <li>相约情人节<br>全场119元起</li>
+            <li>新款上线<br>全场357元起</li>
+            <li>愤怒小鸟特卖<br>全场89元</li>
+            <li>男鞋促销第一<br>全场3.1折起</li>
+            <li>春季新品发布<br>全场4.1折起</li>
+            </ul>
+        </div>
+        <div class="main-right">
+            <div class="main-right-top">
+                <img src="../images/upload/20120216.jpg" alt=""/>
+            </div>
+            <div class="main-right-bottom">
+                <h2>最新动态</h2>
+                <ul>
+                    <li><a href="#">[活动]依伴春鞋迎春大促销</a></li>
+                    <li><a href="#">[活动]千百度冬靴新品火热让利</a></li>
+                    <li><a href="#">[活动]COEY秋冬新品全场2.3折起</a></li>
+                    <li><a href="#">[活动]依伴春鞋迎春大促销</a></li>
+                    <li><a href="#">[活动]千百度冬靴新品火热让利</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="ding">
+        <h2>品牌活动</h2>
+        <div class="lunbo1">
+            <ul class="dian">
+                <li><a href="#" class="yun">运动</a></li>
+                <li><a href="#" class="nv">女鞋</a></li>
+                <li><a href="#" class="nan">男鞋</a></li>
+                <li><a href="#" class="tong">童鞋</a></li>
+            </ul>
+            <div class="lunbo2">
+            <div class="lunbo-2">
+                <ul>
+                    <li><img src="../images/upload/20120217.jpg" alt=""/><a href="#">耐克</a></li>
+                    <li><img src="../images/upload/20120218.jpg" alt=""/><a href="#">阿迪达斯</a></li>
+                    <li><img src="../images/upload/20120219.png" alt=""/><a href="#">李宁</a></li>
+                    <li><img src="../images/upload/20120220.png" alt=""/><a href="#">安踏</a></li>
+                </ul>
+            </div>
+            <div class="lunbo-2">
+                <ul>
+                    <li><img src="../images/upload/20120217.jpg" alt=""/><a href="#">耐克</a></li>
+                    <li><img src="../images/upload/20120218.jpg" alt=""/><a href="#">阿迪达斯</a></li>
+                    <li><img src="../images/upload/20120219.png" alt=""/><a href="#">李宁</a></li>
+                    <li><img src="../images/upload/20120220.png" alt=""/><a href="#">安踏</a></li>
+                </ul>
+            </div>
+            <div class="lunbo-2">
+                <ul>
+                    <li><img src="../images/upload/20120217.jpg" alt=""/><a href="#">耐克</a></li>
+                    <li><img src="../images/upload/20120218.jpg" alt=""/><a href="#">阿迪达斯</a></li>
+                    <li><img src="../images/upload/20120219.png" alt=""/><a href="#">李宁</a></li>
+                    <li><img src="../images/upload/20120220.png" alt=""/><a href="#">安踏</a></li>
+                </ul>
+            </div>
+            <div class="lunbo-2">
+                <ul>
+                    <li><img src="../images/upload/20120217.jpg" alt=""/><a href="#">耐克</a></li>
+                    <li><img src="../images/upload/20120218.jpg" alt=""/><a href="#">阿迪达斯</a></li>
+                    <li><img src="../images/upload/20120219.png" alt=""/><a href="#">李宁</a></li>
+                    <li><img src="../images/upload/20120220.png" alt=""/><a href="#">安踏</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

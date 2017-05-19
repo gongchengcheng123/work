@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index2.css"/>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("div:only-child").css("background","green")
+            $(":checkbox").click(function(){
+                var n=$("input:checked").length;
+                $(".div10").html("<span>"+n+"</span>");
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="div1">1</div>
+<div class="div2">2</div>
+<div class="div3">3</div>
+<div class="div4">4</div>
+<div class="div5">5</div>
+<div class="div6">6</div>
+<div class="div7">7</div>
+<div class="div8">8</div>
+<div class="div9">9</div>
+<div class="div10">10</div>
+<input type="checkbox"/>
+<input type="checkbox"/>
+<input type="checkbox"/>
+<input type="checkbox"/>
+<input type="checkbox"/>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

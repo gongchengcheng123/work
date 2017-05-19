@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index4.css"/>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul li").click(function(){
+                var a=$(this).index();
+                $("div").eq(a).show().siblings().not("ul").hide();
+                $(this).css("background","blue");
+                $(this).siblings().css("background","#fff");
+            })
+        })
+    </script>
+</head>
+<body>
+
+        <ul>
+            <li>aaaaa</li>
+            <li>bbbbb</li>
+            <li>ccccc</li>
+            <li>ddddd</li>
+        </ul>
+
+    <div class="div1">aaaaa</div>
+    <div class="div2">bbbbb</div>
+    <div class="div3">ccccc</div>
+    <div class="div4">ddddd</div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

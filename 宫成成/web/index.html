@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script src="../jq/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function(){
+            //滚动导航//
+             $("ul li").mouseenter(function(){
+                  $(this).find(".a").stop().animate({"margin-top":"-40px"},300);
+             })
+              $("ul li").mouseleave(function(){
+                   $(this).find(".a").stop().animate({"margin-top":"0px"},300);
+             })
+            //淡入淡出//
+            var n=0;
+            function run(){
+                n++
+                n=(n==3)?0:n;
+                $(".main img").eq(n).fadeIn(1000).siblings("img").fadeOut(1000);
+            }
+            var timer=setInterval(run,3000);
+            $(".da").mouseenter(function(){
+                $(".bian").stop().fadeIn(500);
+            })
+                    $(".bian").mouseleave(function(){
+                        $(".bian").fadeOut(500);
+                    })
+            $(".banner1,.banner4,.banner3,.banner5").hover(function(){
+                $(this).find("a").stop().animate({"margin-top":"-322px"},600)
+            },function(){
+                $(this).find("a").stop().animate({"margin-top":0},800);
+            })
+        $(".banner2,.banner6,.banner7,.banner8,.banner9").hover(function(){
+                $(this).find("a").stop().animate({"opacity":0.3},800);
+           },function(){
+               $(this).find("a").stop().animate({"opacity":0},800);
+            })
+        })
+
+    </script>
+</head>
+<body>
+<div class="con">
+<header>
+    <nav>
+        <ul>
+            <li><div class="a"><span>定制</span><a href="">定制</a></div></li>
+            <li><div class="a"><span>市集</span><a href="">市集</a></div></li>
+            <li><div class="a"><span>新品</span><a href="">新品</a></div></li>
+            <li><div class="a"><span>热卖</span><a href="">热卖</a></div></li>
+            <li><div class="a"><span>闪购</span><a href="">闪购</a></div></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <img src="../images/logo_03.gif" alt=""/>
+    </div>
+    <div class="header">
+        <img src="../images/top-top_06.gif" alt="" class="da"/>
+        <img src="../images/pic2_01.gif" alt="" class="bian"/>
+    </div>
+</header>
+<div class="main">
+        <img src="../images/walle.jpg" alt="" style="display: block"/>
+        <img src="../images/toystory.jpg" alt=""/>
+        <img src="../images/up.jpg" alt=""/>
+</div>
+    <div class="banner">
+        <div class="banner-l">
+            <h2>当日精选</h2>
+            <div class="banner1">
+                <img src="../images/pc1_03.gif" alt="" class="one"/>
+                <a href="" class="s"></a>
+            </div>
+            <div class="banner3">
+                <img src="../images/pc2_03.gif" alt="" class="two"/>
+                <a href="" class="s"></a>
+            </div>
+            <div class="banner4">
+                <img src="../images/pc3_03.gif" alt="" class="there"/>
+                <a href="" class="s"></a>
+            </div>
+            <div class="banner5">
+                <img src="../images/pc4_03.gif" alt=""/>
+                <a href="" class="b"></a>
+            </div>
+        </div>
+        <div class="banner-b">
+            <h2>创意画报</h2>
+            <div class="banner2">
+                <img src="../images/pc9_03.gif" alt=""/>
+                <a href="" class="c"></a>
+            </div>
+            <div class="banner6">
+                <img src="../images/pc5_03.gif" alt="" class="img1"/>
+                <a href="" class="d"></a>
+            </div>
+            <div class="banner7">
+                <img src="../images/pc6_03.gif" alt="" class="img2"/>
+                <a href="" class="e"></a>
+            </div>
+            <div class="banner8">
+                <img src="../images/pc7_03.gif" alt="" class="img3"/>
+                <a href="" class="f"></a>
+            </div>
+            <div class="banner9">
+                <img src="../images/pc8_03.gif" alt="" class="img4"/>
+                <a href="" class="g"></a>
+            </div>
+        </div>
+    </div>
+<footer></footer>
+</div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+.a{
+    width: 100%;
+    margin: 0 auto;
+}
+.b{
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+ul li input{
+    width: 20px;
+    cursor: pointer;
+}
+.c{
+    position: absolute;
+    top: 300px;
+    left: 540px;
+    width: 200px;
+
+}
+ul{
+
+}

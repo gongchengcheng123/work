@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            //var a=$("ul li:eq(1)").text();
+            //alert(a);
+            //var b=$("ul li:eq(0)").attr("title")
+            //alert(b);
+            //追加  创建节点//
+            //var li1=$("<li>fffffffff</li>")
+                //$("ul").append(li1);
+            //var tr1=$("<tr><td>fsafawe</td>></tr>>")
+                //$("table").append(tr1);
+            //删除节点//
+            //var c=$("ul li:eq(0)").remove();
+                //$("ul").append(c);
+            //追加属性//
+                //$("ul li").click(function(){
+               // $(this).css("background","blue")
+            //})
+            //var d=$("ul li:eq(0)").detach();
+            //复制节点 带有原来事件//
+            //var e=$("ul li:eq(2)").clone(true);
+                //$("ul").append(e);
+            $("ul li").click(function(){
+                //复制节点
+                    $(this).css("background","green");
+                    var f=$(this).clone(true);
+                    $("ul").append(f);
+            })
+            //替换节点
+           // $(".div1").replaceWith("<h1>hello world</h1>");
+           // $("<h1>hello world</h1>").replaceAll(".div1");
+            //包裹
+            //所有元素进行单行包裹
+          //  $("ul li").wrap("<p></p>")
+            //将匹配元素用一个元素包裹起来
+            //$("ul li").wrapAll("<h2></h2>")
+
+
+
+        })
+    </script>
+</head>
+<body>
+<div class="div1">
+    hello world
+</div>
+<div>
+    <ul>
+        <li title="A">aaaaa</li>
+        <li>ssss</li>
+        <li>dd</li>
+        <li>fffq</li>
+        <li>fwqw</li>
+    </ul>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>da</td>
+            <td>dsa</td>
+            <td>dsa</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

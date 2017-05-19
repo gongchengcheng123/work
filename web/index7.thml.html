@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        //图片下来又上去
+//        $(function(){
+//            $(".top").animate({"margin-top":0},1000,function(){
+//               // setTimeout(function(){
+//               //     $(".top").animate({"margin-top":"-700"},1000);
+//             //   },3000);
+//                //第二种延迟执行
+////                $(".top").delay(3000).animate({"margin-top":"-700px"},1000);
+//        })
+        $(".btn1").click(function(){
+            $(".top").animate({"margin-top":0},1000);
+        })
+
+    </script>
+    <style>
+        body{
+            margin: 0;
+        }
+        .top{
+            width: 100%;
+            margin: auto;
+            margin-top: -700px;
+        }
+        .countent{
+            width: 100%;
+            height: 1000px;
+            background: #E31E1C;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="../images/效果图.jpg" alt="" style="width: 100%"/>
+        <input type="button" class="btn1" value="请点击"/>
+    </div>
+    <div class="countent"></div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

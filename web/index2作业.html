@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index2作业.css"/>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            var a=$("ul li:gt(5):not(:last)");
+            a.hide();
+            $(".showmore a").click(function(){
+                if(a.is(":visible")){
+                    a.hide();
+                    $(this).find("span").text("显示全部品牌")
+                }else{
+                    a.show()
+                    $(this).find("span").text("精简显示品牌")
+                }
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div class="allBox">
+        <ul>
+            <li><a href="#">1 佳能</a></li>
+            <li><a href="#">2 索尼</a></li>
+            <li><a href="#">3 三星</a></li>
+            <li><a href="#">4 尼康</a></li>
+            <li><a href="#">5 松下</a></li>
+            <li><a href="#">6 卡西欧</a></li>
+            <li><a href="#">7 富士</a></li>
+            <li><a href="#">8 柯达</a></li>
+            <li><a href="#">9 宾得</a></li>
+            <li><a href="#">10 理光</a></li>
+            <li><a href="#">11 奥林巴斯</a></li>
+            <li><a href="#">12 明基</a></li>
+            <li><a href="#">13 爱国者</a></li>
+            <li><a href="#">其他品牌相机</a></li>
+        </ul>
+    </div>
+    <div class="showmore">
+        <a href="#"><span>显示全部品牌</span></a>
+    </div>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

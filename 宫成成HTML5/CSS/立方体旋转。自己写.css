@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.comsic-cub{
+    height: 100vh;
+    .background-color: #000000;
+
+}
+.comsic-cub .comsic{
+
+}
+.comsic-cub .cube{
+    width: 80px;
+    height: 80px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(30deg) rotateZ(30deg);
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: cube 5s infinite linear;
+
+}
+.cube div{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ff0051;
+    position: absolute;
+    box-shadow: 0 0 80px #ff0051;
+}
+.comsic-cub .cube div:nth-of-type(1){
+    transform: translateY(40px) rotateX(90deg);
+    color: #ffffff;
+}
+.comsic-cub .cube div:nth-of-type(2){
+    transform: translateY(-40px) rotateX(90deg);
+}
+.comsic-cub .cube div:nth-of-type(3){
+    transform: translateX(40px) rotateY(90deg);
+}
+.comsic-cub .cube div:nth-of-type(4){
+    transform: translateX(-40px) rotateY(90deg);
+}
+.comsic-cub .cube div:nth-of-type(5){
+    transform: translateZ(40px);
+}
+.comsic-cub .cube div:nth-of-type(6){
+    transform: translateZ(-40px);
+}
+@keyframes cube {
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}

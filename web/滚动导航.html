@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		li{
+			list-style: none;
+			width: 100px;
+			height: 40px;
+			float: left;
+			background-color: #ccc;
+			line-height: 40px;
+			text-align: center;
+			overflow: hidden;
+			
+		}
+		span{
+			display: block;
+			color:#fff;
+			background-image: url(../images/ul_bj_03.jpg);
+		}
+		a{
+			background-color: #acc335;
+			display: block;
+			text-decoration: none;
+			background-image: url(../images/ul_bj_05.jpg);
+			
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<div>
+				<span>AAA</span><a href="#" class="appe">BBB</a>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span>CCC</span><a href="#" class="appe">DDD</a>
+			</div>
+		</li>
+		<li>
+			<div>
+				<span>EEE</span><a href="#" class="appe">FFF</a>
+			</div>
+		</li>
+	</ul>
+	<script src="../素材/jquery-1.11.1.min.js"></script>
+	<script>
+		$("ul li").mouseenter(function(){
+			$(this).find("div").stop().animate({"margin-top":"-40px",},100);
+		})
+		$("ul li").mouseleave(function(){
+			$(this).find("div").stop().animate({"margin-top":"0px",},100);
+		})
+	</script>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

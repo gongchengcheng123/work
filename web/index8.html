@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(function() {
+            $("li").click(function () {
+                $(this).toggleClass("cur").sibling().removeClass("cur");
+            })
+            $(".btn1").click(function () {
+                var cont = $(".div2").html();
+                $(".div3").html(cont);
+                $(".div2").html("");
+            })
+            $(".btn2").click(function () {
+                var cont = $(".div2").html();
+                $(".div2").html($(".div3").html());
+                $(".div3").html(cont);
+            })
+            var n = 1;
+            $(".btn3").click(function () {
+                if (n == 1) {
+                    var cont = $(".div2").html();
+                    $(".div3").html(cont);
+                    $(".div2").html("");
+                    n--;
+                } else {
+                    var cont = $(".div3").html();
+                    $(".div2").html(cont);
+                    $(".div3").html("");
+                    n++;
+                }
+            })
+            $(".btn4").click(function () {
+                var cont = $(".select1 option:selected");
+                $(".select2").append(cont);
+            })
+            $(".btn5").click(function () {
+                var i = $(".select1 option");
+                $(".select2").append(i);
+            })
+            $(".select1 option").dblclick(function(){
+                $(this).appendTo(".select2");
+            })
+            $(".select2 option").dblclick(function(){
+                $(this).appendTo(".select1");
+            })
+        })
+    </script>
+    <style>
+        .div1{
+            margin-top: 300px;
+        }
+        ul li{
+            display: inline-block;
+            background-color: aquamarine;
+            width: 100px;
+            height: 100px;
+        }
+        li.cur{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .div2,.div3{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .select1,.select2{
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <hr>
+        <input type="button" class="btn1" value="搬家1"/>
+        <input type="button" class="btn2" value="搬家2"/>
+        <input type="button" class="btn3" value="搬家3"/>
+    <div class="div2">
+        <h2>这里有很多宝藏</h2>
+        <img src="../images/02.jpg" alt=""/>
+    </div>
+    <div class="div3"></div>
+    <div class="div4">
+        <select class="select1" multiple="multiple" name="" id="">
+            <option value="">选项1</option>
+            <option value="">选项2</option>
+            <option value="">选项3</option>
+            <option value="">选项4</option>
+            <option value="">选项5</option>
+            <option value="">选项6</option>
+            <option value="">选项7</option>
+        </select>
+        <select class="select2" multiple="multiple" name="" id="">
+            <input type="button" class="btn4" value="选中移入"/>
+            <input type="button" class="btn5" value="全部移入"/>
+        </select>
+    </div>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

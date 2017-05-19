@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .li1{
+            background-color:rosybrown;
+        }
+        .ul{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+    <script src="../素材/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+            //$("ul li:eq(0)").attr("class","li1")
+            //$("ul li:first").removeAttr("class");
+            //$("ul li:first-child").attr("class")
+           // $("ul li:eq(1)").click(function(){
+               // $(".ul").toggleClass("show");
+          //  })
+           //$(".btn").click(function(){
+            //    var a=$("input[type='text']").val();
+          //      alert(a)
+        //    })
+            var a=$("ul").children();
+                for(i=0;i< a.size();i++){
+                    var b=$(a[i]).text();
+                    $("ul").append(b);
+                }
+        })
+    </script>
+</head>
+<body>
+<ul>
+    <li class="li1">aaaaa</li>
+    <li>bbbbb</li>
+        <ul class="ul">
+            <li>aaaaa</li>
+            <li>bbbbb</li>
+
+            <li>ccccc</li>
+            <li>ddddd</li>
+        </ul>
+    <li>ccccc</li>
+    <li>ddddd</li>
+</ul>
+</body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>
